@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>ArduinoRemotePowerController</RootNamespace>
+    <ProjectName>ArduinoRemotePowerController</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\Arduino\libraries\Ethernet\src;D:\Program Files (x86)\Arduino\libraries\Ethernet\src\utility;D:\Program Files (x86)\Arduino\libraries\ICMPPing;D:\Program Files (x86)\Arduino\libraries\ICMPPing\utility;D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src;D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src\utility;D:\Program Files (x86)\Arduino\libraries\TrueRandom;D:\Program Files (x86)\Arduino\libraries\TrueRandom\utility;D:\Program Files (x86)\Arduino\libraries;D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;F:\文档_system\Arduino\libraries;D:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;D:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;F:\文档\大学课程材料\Arduino\Final\ArduinoRemotePowerController\ArduinoRemotePowerController;D:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;D:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;D:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>F:\文档\大学课程材料\Arduino\Final\ArduinoRemotePowerController\ArduinoRemotePowerController\__vm\.ArduinoRemotePowerController.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=10609;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src;D:\Program Files (x86)\Arduino\libraries\Ethernet\src;D:\Program Files (x86)\Arduino\libraries\ICMPPing;D:\Program Files (x86)\Arduino\libraries\TrueRandom;D:\Program Files (x86)\Arduino\libraries\Ethernet\src\utility;D:\Program Files (x86)\Arduino\libraries\ICMPPing\utility;D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\SPI\src\utility;D:\Program Files (x86)\Arduino\libraries\TrueRandom\utility;D:\Program Files (x86)\Arduino\libraries;D:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;F:\文档_system\Arduino\libraries;D:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;D:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;F:\文档\大学课程材料\Arduino\Final\ArduinoRemotePowerController\ArduinoRemotePowerController;D:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;D:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;D:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="ArduinoRemotePowerController.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="libraries.7z" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calc.h" />
+    <ClInclude Include="__vm\.ArduinoRemotePowerController.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
